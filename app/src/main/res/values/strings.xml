@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Agenda_Database</string>
+    <string name="titulo">Contactos</string>
+    <string name="tituloCrear">Crear Contactos</string>
+    <string name="tituloEditar">Editar Contactos</string>
+    <string name="nombre">Nombre</string>
+    <string name="movil">Movil</string>
+    <string name="email">Email</string>
+    <string name="btnVolver">Volver</string>
+    <string name="btnEditar">Editar</string>
+    <string name="btnCrear">Crear</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>

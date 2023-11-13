@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+
+            <TextView
+                android:id="@+id/rEmail"
+                android:layout_width="160dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:textColor="@color/email"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rMovil" />
+
+            <TextView
+                android:id="@+id/rNombre"
+                android:layout_width="238dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:textColor="@color/nombre"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rMovil"
+                android:layout_width="159dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:textColor="@color/movil"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rNombre" />
+
+            <TextView
+                android:id="@+id/textMovil"
+                android:layout_width="31dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:drawableLeft="@drawable/ic_movil"
+                android:gravity="center"
+                app:layout_constraintEnd_toStartOf="@+id/rMovil"
+                app:layout_constraintTop_toBottomOf="@+id/rNombre" />
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="29dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:drawableLeft="@drawable/ic_mail"
+                android:gravity="center"
+                app:layout_constraintEnd_toStartOf="@+id/rEmail"
+                app:layout_constraintTop_toBottomOf="@+id/textMovil" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
